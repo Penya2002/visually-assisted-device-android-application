@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgfour"
+    tools:context=".MainActivity">
+
+
+
+
+    <Button
+        android:id="@+id/buttonstart"
+        android:layout_width="370dp"
+        android:layout_height="148dp"
+        android:background="@drawable/custombutton"
+        android:onClick="buttonstart"
+        android:text=""
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.086"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/image_one"
+        android:layout_width="115dp"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonstart"
+        app:layout_constraintEnd_toEndOf="@+id/buttonstart"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="@+id/buttonstart"
+        app:layout_constraintTop_toTopOf="@+id/buttonstart"
+        app:layout_constraintVertical_bias="0.428"
+        app:srcCompat="@drawable/barcode"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/text_one"
+        android:layout_width="193dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="24dp"
+        android:text="@string/scan_to_listen"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonstart"
+        app:layout_constraintStart_toEndOf="@+id/image_one"
+        app:layout_constraintTop_toTopOf="@+id/buttonstart"
+        app:layout_constraintVertical_bias="0.578"
+        tools:ignore="TextSizeCheck" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonstart"
+        app:layout_constraintVertical_bias="0.587">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

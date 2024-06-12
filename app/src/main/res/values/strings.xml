@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Application</string>
+    <string name="scan_to_listen">Scan to Listen</string>
+    <string name="VAD">VAD </string>
+</resources>
